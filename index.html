@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sohba Travel - صحبة ترافل | رحلات سياحية داخلية، رحلات مدارس، وبرامج عمرة.">
+<meta name="theme-color" content="#071b35">
+<title>Sohba Travel | صحبة ترافل</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--navy:#071b35;--navy2:#0d2a4b;--gold:#c9a86a;--cream:#f7f4ed;--ink:#14263b;--muted:#66758a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Cairo',sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:absolute;z-index:5;top:0;left:0;right:0;color:white;border-bottom:1px solid #ffffff2a}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+.mark{width:45px;height:45px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:21px}
+.brand small{display:block;font-size:10px;letter-spacing:3px;color:#e2c995;direction:ltr;text-align:right}
+nav{display:flex;gap:27px;font-size:14px;color:#f4f1eb}
+nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:3px;background:var(--gold);color:#10243b;font-weight:800;font-size:14px}
+.hero{min-height:690px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(4,19,37,.82),rgba(4,19,37,.35)),url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2200&q=85') center/cover}
+.hero-content{padding-top:90px;max-width:690px}.eyebrow{color:#e3c68e;letter-spacing:2px;font-size:13px;font-weight:700}
+h1{font-size:clamp(38px,6vw,70px);line-height:1.25;margin:16px 0 18px;font-weight:900}
+.hero p{font-size:18px;line-height:2;color:#e9edf2;max-width:610px;margin:0 0 30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn-outline{border:1px solid #ffffffa8;color:white;padding:11px 22px;border-radius:3px;font-weight:700}
+.trust{background:var(--navy);color:white}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:25px 0;text-align:center}.trust strong{display:block;color:var(--gold);font-size:17px}.trust span{font-size:12px;color:#d5deea}
+section{padding:82px 0}.section-head{text-align:center;margin:0 auto 42px;max-width:680px}.kicker{color:#a47e3f;font-size:12px;font-weight:800;letter-spacing:2px}.section-head h2{font-size:clamp(27px,4vw,39px);margin:8px 0;color:var(--navy)}.section-head p{color:var(--muted);line-height:1.9;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service{border:1px solid #e9e5dc;background:white;overflow:hidden;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 40px #10243b12}
+.service img{width:100%;height:215px;object-fit:cover;display:block}.service-body{padding:23px}.service h3{margin:0 0 9px;color:var(--navy);font-size:20px}.service p{margin:0;color:var(--muted);line-height:1.9;font-size:14px}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-photo{min-height:390px;background:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85') center/cover;border-radius:2px}.about-copy h2{font-size:36px;color:var(--navy);margin:8px 0 18px}.about-copy p{color:var(--muted);line-height:2}.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.value{border-right:3px solid var(--gold);padding:5px 13px;font-weight:700;color:var(--navy)}
+.destinations{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}.destination{height:300px;position:relative;overflow:hidden;color:white}.destination img{width:100%;height:100%;object-fit:cover;transition:.5s}.destination:hover img{transform:scale(1.06)}.destination:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071b35d9)}.destination span{position:absolute;z-index:1;bottom:20px;right:20px;font-size:22px;font-weight:800}
+.cta{background:linear-gradient(120deg,#0b2949,#07172b);color:white;text-align:center}.cta h2{font-size:34px;margin:0 0 12px}.cta p{color:#d5dfeb;margin:0 auto 25px;line-height:1.9;max-width:650px}
+footer{background:#041326;color:#d8e0e9;padding:45px 0 20px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:35px}.footer-grid h3{color:var(--gold);margin-top:0}.footer-grid p,.footer-grid a{font-size:14px;line-height:2;color:#c5cfdb}.footer-grid a{display:block}.copyright{border-top:1px solid #ffffff20;margin-top:30px;padding-top:17px;text-align:center;color:#9eacbc;font-size:12px}
+.float{position:fixed;bottom:20px;left:20px;z-index:10;background:#168b55;color:white;border-radius:50px;padding:12px 18px;font-weight:800;box-shadow:0 8px 25px #0003}
+@media(max-width:800px){nav{display:none}.hero{min-height:620px}.trust-row{grid-template-columns:1fr}.services{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:28px}.about-photo{min-height:270px}.destinations{grid-template-columns:1fr}.destination{height:230px}.footer-grid{grid-template-columns:1fr}.section-head{margin-bottom:28px}section{padding:60px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="mark">✦</span><span>صحبة ترافل<small>SOHBA TRAVEL</small></span></a>
+<nav><a href="#home">الرئيسية</a><a href="#services">خدماتنا</a><a href="#about">من نحن</a><a href="#destinations">وجهاتنا</a><a href="#contact">تواصل معنا</a></nav>
+<a class="nav-cta" href="#contact">احجز رحلتك</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-content">
+<div class="eyebrow">اكتشف العالم… واستمتع بكل لحظة</div>
+<h1>رحلتك تبدأ مع<br><span style="color:#dfc18a">صحبة ترافل</span></h1>
+<p>نقرّب لك أجمل الوجهات ونساعدك تخطط لرحلة مريحة مليانة ذكريات حلوة. اختار وجهتك، وسيب تفاصيل الرحلة علينا.</p>
+<div class="hero-actions"><a class="btn" href="#contact">تواصل واحجز الآن</a><a class="btn-outline" href="#services">اكتشف خدماتنا</a></div>
+</div></div></section>
+<div class="trust"><div class="wrap trust-row"><div><strong>رحلات داخلية</strong><span>اكتشف جمال بلدك</span></div><div><strong>رحلات مدارس</strong><span>تجارب ممتعة ومنظمة</span></div><div><strong>برامج عمرة</strong><span>رحلة إيمانية بكل اهتمام</span></div></div></div>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">خدماتنا</div><h2>كل رحلة… لها حكاية</h2><p>اختيارات متنوعة تناسب الأفراد والعائلات والمجموعات، مع اهتمام بالتفاصيل من أول تواصل لحد نهاية الرحلة.</p></div>
+<div class="services">
+<article class="service"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85" alt="رحلات سياحية على البحر"><div class="service-body"><h3>الرحلات الداخلية</h3><p>استمتع بوجهات مصر الجميلة وبرامج تناسب الأصدقاء والعائلات والمجموعات.</p></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85" alt="مجموعة طلاب"><div class="service-body"><h3>رحلات المدارس</h3><p>رحلات ترفيهية وتعليمية تمنح الطلاب وقتًا ممتعًا وتجربة جديدة.</p></div></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=900&q=85" alt="المسجد الحرام"><div class="service-body"><h3>برامج العمرة</h3><p>تواصل معنا للتعرف على البرامج والتفاصيل المتاحة ومواعيد الرحلات.</p></div></article>
+</div></div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div class="about-photo" role="img" aria-label="منظر جبلي سياحي"></div><div class="about-copy"><div class="kicker">من نحن</div><h2>السفر أجمل… لما تكون الصحبة حلوة</h2><p>في Sohba Travel بنؤمن إن الرحلة مش مجرد انتقال من مكان لمكان؛ دي وقت جميل وذكريات بتفضل معانا. هدفنا نسهّل عليك اختيار رحلتك والتواصل معانا للحصول على التفاصيل المناسبة.</p><div class="values"><div class="value">اهتمام بالتفاصيل</div><div class="value">تنوع في البرامج</div><div class="value">تواصل مباشر</div><div class="value">تجربة تستحق التكرار</div></div></div></div></section>
+<section id="destinations"><div class="wrap"><div class="section-head"><div class="kicker">وجهات تلهمك</div><h2>اختار المكان… وابدأ الحكاية</h2><p>صور استرشادية لوجهات سياحية. اسألنا عن البرامج المتاحة والتفاصيل.</p></div><div class="destinations">
+<div class="destination"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1100&q=85" alt="الأهرامات"><span>سحر مصر</span></div>
+<div class="destination"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85" alt="مدينة دبي"><span>وجهات عربية</span></div>
+<div class="destination"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="طبيعة وسفر"><span>رحلات واكتشاف</span></div>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2>جاهز لرحلتك القادمة؟</h2><p>ابعتلنا واستفسر عن الرحلات والبرامج المتاحة. فريق صحبة ترافل في انتظار تواصلك.</p><a class="btn" href="https://wa.me/201022921740">تواصل عبر واتساب</a></div></section>
+</main>
+<footer id="contact"><div class="wrap"><div class="footer-grid">
+<div><h3>صحبة ترافل | SOHBA TRAVEL</h3><p>رحلات أجمل… وذكريات تدوم.<br>تواصل معنا لمعرفة البرامج والتفاصيل المتاحة.</p></div>
+<div><h3>روابط سريعة</h3><a href="#services">خدماتنا</a><a href="#about">من نحن</a><a href="#destinations">وجهاتنا</a></div>
+<div><h3>اتصل بنا</h3><a href="tel:01022921740">01022921740</a><a href="tel:01091959716">01091959716</a><a href="tel:01501426080">01501426080</a><a href="https://wa.me/201022921740">واتساب</a></div>
+</div><div class="copyright">© 2026 Sohba Travel. جميع الحقوق محفوظة.</div></div></footer>
+<a class="float" href="https://wa.me/201022921740" aria-label="تواصل عبر واتساب">واتساب</a>
+</body></html>
